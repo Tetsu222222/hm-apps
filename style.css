@@ -28,6 +28,40 @@ body {
   font-weight: bold;
 }
 
+.notices {
+  margin-bottom: 24px;
+}
+
+.notices-title {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.notice-item {
+  background: #fffbe6;
+  border-left: 4px solid #e6a817;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+}
+
+.notice-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #b37d00;
+  margin-bottom: 6px;
+}
+
+.notice-body {
+  font-size: 0.875rem;
+  color: #333;
+  padding-left: 1.2em;
+  line-height: 1.6;
+}
+
 .app-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
