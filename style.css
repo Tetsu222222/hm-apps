@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, 'Helvetica Neue', sans-serif;
+  background: #f0f0f0;
+  color: #222;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.header {
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #333;
+}
+
+.header h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.app-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-card:hover {
+  background: #f8f8f8;
+  border-color: #888;
+}
+
+.app-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.app-desc {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
